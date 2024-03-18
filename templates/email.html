@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="#" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+                {{msg}}
+                <br>
+                <h2>Email Verification</h2>
+                <form action="http://localhost:5000/verify" method="POST">
+                    <input type="text" id="login" class="fadeIn second" name="email" placeholder="email">
+                    <input class="fadeIn fourth" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
