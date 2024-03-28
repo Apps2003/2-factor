@@ -35,7 +35,7 @@ def verify():
     gmail = request.form['email']
 
     # Create and send email message with OTP
-    msg = Message('OTP', sender='21301066aparna@viva-technology.org', recipients=[gmail])
+    msg = Message('OTP', sender='add-email', recipients=[gmail])
     msg.body = str(otp)
     mail.send(msg)
 
